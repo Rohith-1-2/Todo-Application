@@ -1,0 +1,32 @@
+//API-1 
+GET http://localhost:3000/todos/?status=TO%20DO
+
+//API-2
+GET http://localhost:3000/todos/3/ 
+
+//API-3 
+GET http://localhost:3000/agenda/?date=2021-04-04
+
+//API-4 
+POST http://localhost:3000/todos/
+Content-Type: application/json 
+
+{
+  "id": 56,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO",
+  "category": "HOME",
+  "dueDate": "2021-02-22"
+}
+
+//API-5 
+PUT http://localhost:3000/todos/3/
+Content-Type: application/json 
+
+{
+  "category": "LEARNING"
+}
+
+//API-6 
+DELETE http://localhost:3000/todos/7/ 
